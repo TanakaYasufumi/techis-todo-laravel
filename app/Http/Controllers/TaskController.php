@@ -38,9 +38,11 @@ class TaskController extends Controller
     {
         //$tasks = Task::orderBy('created_at', 'asc')->get();
         //$tasks = $request->user()->tasks()->get();
-        
+        //var_dump($this->tasks->forUser($request->user()));
+        //var_dump($request->user()); exit;
+        //var_dump($this->tasks); exit;
         return view('tasks.index', [
-            'tasks' => $this->tasks->forUser($request->user()),
+            'tasks' => $this->tasks->forUser($request->user()), //$this->tasksはTaskRepository.その中のforUser関数を引数$request->userとしてつかう。
         ]);
     }
  

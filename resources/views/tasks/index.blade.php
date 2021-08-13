@@ -53,6 +53,9 @@
                     <td class="table-text">
                         <div>{{ $task->name }}</div>
                     </td>
+                    <td class="table-text">
+                        <div>{{ $task->user->name }}</div>
+                    </td>
  
                     <td>
                         <!-- TODO: 削除ボタン -->

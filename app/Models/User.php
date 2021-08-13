@@ -42,7 +42,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * ユーザーの保持する全タスク
+     * ユーザーの保持する全タスク。ユーザーデーブルとタスクテーブルは紐づいているので、呼び出すことができる。
      */
     public function tasks()
     {

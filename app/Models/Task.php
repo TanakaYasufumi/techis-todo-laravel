@@ -12,7 +12,7 @@ class Task extends Model
     protected $fillable = ['name'];
 
     /**
-     * タスクを保持するユーザーの取得
+     * タスクを保持するユーザーの取得。タスクテーブルとユーザーテーブルは紐付けされているので、このタスクのユーザー情報を返してくれる
      */
     public function user()
     {
